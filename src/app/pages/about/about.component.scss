@@ -1,0 +1,60 @@
+main {
+  background: #0F0B35;
+  padding: 60px;
+}
+.main-container {
+  background: url("/assets/about/main_background_city.png") no-repeat center / cover #E3E3E3;
+  box-shadow: inset 0 4px 40px rgba(0, 0, 0, 0.49);
+  border-radius: 24px;
+  position: relative;
+  padding-top: 200px;
+  overflow: hidden;
+}
+.description {
+  padding: 20px;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 100%;
+  text-align: center;
+  letter-spacing: -0.03em;
+  color: #525252;
+}
+.city-in-container {
+  padding: 0;
+  background: url("/assets/about/city_in_container.png") no-repeat center / cover;
+  height: 800px;
+  position: relative;
+  overflow: hidden;
+}
+.city-in-container:after {
+  content: '';
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 200px;
+  left: -100px;
+  border: 30px solid #E3E3E3;
+  border-radius: 100%;
+}
+.vertical-title {
+  padding-top: 120px;
+}
+.about-circle {
+  position: absolute;
+  top: 70px;
+  right: 24px;
+  width: 230px;
+  height: 230px;
+  text-align: center;
+  font-size: 2em;
+  border-radius: 50%;
+  padding: 40px 20px 20px;
+  color: white;
+  font-family: Roboto, sans-serif;
+  background: #3B2E60;
+  border: 4px solid #FFFFFF;
+  box-sizing: border-box;
+  box-shadow: inset 0 4px 13px rgba(0, 0, 0, 0.61);
+}

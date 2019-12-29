@@ -1,0 +1,63 @@
+header {
+  background: url("/assets/main/city_head.png") no-repeat center / cover;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.top-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 14px;
+  padding-left: 70px;
+  padding-right: 20px;
+}
+.top-nav .title {
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  letter-spacing: 0.34em;
+  color: #FFFFFF;
+  display: inline-block;
+}
+.top-nav .send-message {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  height: 40px;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: -0.03em;
+  color: #FFFFFF;
+  float: right;
+}
+.left-fixed-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 60px;
+  text-align: center;
+}
+.left-fixed-nav a {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  min-width: initial;
+  padding: 0;
+  margin-top: 26px;
+}
+.left-fixed-nav a img {
+  width: 100%;
+}
+.left-fixed-nav .button-about {
+  width: 46px!important;
+  height: 46px!important;
+  margin-top: 12px;
+}

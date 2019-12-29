@@ -1,0 +1,161 @@
+main {
+  background: #0F0B35;
+  padding: 60px;
+}
+.main-container {
+  background: url("/assets/what-dev/main_background_city.png") no-repeat center / cover #E3E3E3;
+  box-shadow: inset 0 4px 40px rgba(0, 0, 0, 0.49);
+  border-radius: 24px;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 500px;
+}
+.four-city-paths-container {
+  text-align: right;
+  margin-top: 200px;
+  position: relative;
+
+  .four-city-paths {
+    right: 0;
+    width: 54vw;
+    height: 54vw;
+  }
+
+  .circle-1 {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #E3E3E3;
+    top: 20px;
+    right: 12%;
+  }
+  .circle-2 {
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 14px solid #E3E3E3;
+    top: 16vw;
+    right: 28%;
+  }
+  .circle-3 {
+    position: absolute;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    border: 16px solid #E3E3E3;
+    bottom: 18px;
+    right: 6%;
+  }
+
+  .vertical-title {
+    position: absolute;
+    top: 30px;
+    right: 30%;
+  }
+}
+
+.our-profile-container {
+  position: relative;
+
+  .circle-1 {
+    position: absolute;
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    border: 44px solid #C2C2C2;
+    top: -8vw;
+    left: -6%;
+  }
+
+  div {
+    z-index: 10;
+  }
+  img {
+    width: 100%;
+  }
+
+  .profile-col-1 {
+    height: 70vw;
+  }
+  .profile-col-2 {
+    margin-top: 7.4vw;
+    height: 71.3vw;
+  }
+  .profile-col-3 {
+    margin-top: 15vw;
+    height: 71.2vw;
+  }
+  .profile-col-4 {
+    margin-top: 21.6vw;
+    height: 71.3vw;
+  }
+
+  h4 {
+    width: 8vw;
+    position: absolute;
+    margin: 0;
+    color: #FFFFFF;
+  }
+  h4 span {
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 5vw;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+  }
+  .profile-title-1 {
+    top: 4vw;
+  }
+  .profile-title-2 {
+    bottom: 24vw;
+  }
+  .profile-title-3 {
+    top: 18vw;
+    color: #5C5C5C!important;
+  }
+  .profile-title-4 {
+    bottom: 8vw;
+  }
+}
+
+.description-container {
+  position: relative;
+
+  .description {
+    margin-top: -20px;
+    padding: 0 60px 0 30px;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 93.5%;
+    letter-spacing: 0.05em;
+    color: #6C6C6C;
+    z-index: 1;
+    position: absolute;
+  }
+
+  .line {
+    position: absolute;
+    transform: rotate(164deg);
+    background: #D1D1D1;
+    width: 200vw;
+    left: -50vw;
+  }
+  .line-1 {
+    top: 0;
+    height: 4px;
+  }
+  .line-2 {
+    top: 36px;
+    height: 180px;
+  }
+  .line-3 {
+    top: 250px;
+    height: 4px;
+  }
+}
