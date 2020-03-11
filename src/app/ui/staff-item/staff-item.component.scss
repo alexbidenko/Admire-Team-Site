@@ -1,0 +1,120 @@
+.staff-container {
+  height: 400px;
+  position: relative;
+}
+
+.avatar-container {
+  position: absolute;
+  left: 0;
+  width: 300px;
+  height: 200px;
+  top: 100px;
+  background: url("/assets/staff/avatar_background.png") no-repeat center / cover;
+  border-radius: 0 100px 100px 0;
+  box-shadow: 1px 1px 6px 0 black;
+
+  .class-icon {
+    top: 40px;
+    left: 46px;
+    transform: translate(-50%, -50%);
+    height: 50px;
+    width: 50px;
+    position: absolute;
+  }
+
+  .avatar {
+    background: no-repeat center / cover;
+    left: 200px;
+    width: 180px;
+    height: 180px;
+    transform: translateX(-50%);
+    top: 10px;
+    border-radius: 50%;
+    position: absolute;
+  }
+}
+.content-container {
+  position: absolute;
+  right: 0;
+  width: calc(100% - 100px);
+  height: 300px;
+  top: 50px;
+  border: 12px solid rgba(0, 0, 0, .6);
+  border-radius: 150px 0 0 150px;
+  background: rgba(0, 0, 0, .15);
+  padding: 0 0 0 200px;
+  box-shadow: 1px 1px 8px 1px black;
+
+  .staff-name {
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 3.4vw;
+    text-align: center;
+    letter-spacing: 0.185em;
+    color: #2D166C;
+    margin: 0 10%;
+    width: 80%;
+    bottom: calc(50% + 50px);
+    position: absolute;
+  }
+
+  .staff-position {
+    font-family: Roboto, sans-serif;
+    position: absolute;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.1vw;
+    height: 32px;
+    line-height: 32px;
+    color: white;
+    border-radius: 16px;
+    background: #6a6a6a;
+    margin: 0 10%;
+    width: 80%;
+    text-align: center;
+    bottom: calc(50% + 10px);
+  }
+
+  .staff-description {
+    position: absolute;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.4vw;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #26125D;
+    bottom: 20px;
+    margin: 0 10%;
+    width: 80%;
+  }
+}
+.avatar-circle {
+  position: absolute;
+  top: 200px;
+  left: 200px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  height: 220px;
+  width: 220px;
+  background: #E3E3E3;
+}
+.revers {
+  .avatar-container {
+    right: 0;
+    left: initial;
+    transform: scaleX(-1);
+  }
+  .avatar-circle {
+    right: 200px;
+    left: initial;
+    transform: translate(50%, -50%);
+  }
+  .content-container {
+    left: 0;
+    right: initial;
+    border-radius: 0 150px 150px 0;
+    padding: 0 200px 0 0;
+  }
+}

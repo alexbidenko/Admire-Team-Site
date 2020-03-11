@@ -27,7 +27,7 @@
       <div class="circle-1"></div>
 
       <div class="row">
-        <div class="col-3 p-0 position-relative">
+        <div class="col-3 p-0 position-relative" (click)="whatDevIndex = 'mobile'">
           <img class="profile-col-1" src="/assets/what-dev/profile_mobile.png" alt="Mobile">
           <h4 class="profile-title-1">
             <span>M</span>
@@ -37,16 +37,18 @@
             <span>l</span>
             <span>e</span>
           </h4>
+          <div class="profile-hover hover-1" matRipple></div>
         </div>
-        <div class="col-3 p-0">
+        <div class="col-3 p-0" (click)="whatDevIndex = 'web'">
           <img class="profile-col-2" src="/assets/what-dev/profile_web.png" alt="Web">
           <h4 class="profile-title-2">
             <span>W</span>
             <span>e</span>
             <span>b</span>
           </h4>
+          <div class="profile-hover hover-2" matRipple></div>
         </div>
-        <div class="col-3 p-0">
+        <div class="col-3 p-0" (click)="whatDevIndex = 'design'">
           <img class="profile-col-3" src="/assets/what-dev/profile_design.png" alt="Design">
           <h4 class="profile-title-3">
             <span>D</span>
@@ -56,8 +58,9 @@
             <span>g</span>
             <span>n</span>
           </h4>
+          <div class="profile-hover hover-3" matRipple></div>
         </div>
-        <div class="col-3 p-0">
+        <div class="col-3 p-0" (click)="whatDevIndex = 'complex'">
           <img class="profile-col-4" src="/assets/what-dev/profile_complex.png" alt="Complex">
           <h4 class="profile-title-4">
             <span>C</span>
@@ -68,17 +71,41 @@
             <span>e</span>
             <span>x</span>
           </h4>
+          <div class="profile-hover hover-4" matRipple></div>
         </div>
       </div>
     </div>
 
     <div class="description-container">
       <div class="line line-1"></div>
-      <div class="line line-2"></div>
+      <div class="position-absolute">
+        <img src="/assets/what-dev/description_background.png" alt="" class="line-2">
+      </div>
       <div class="line line-3"></div>
 
-      <p class="description">
-        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
+      <p class="description" [class.open-description]="whatDevIndex === 'mobile'">
+        Мы занимаемся разработкой нативных и кроссплатформанных приложений для iOS и Android.
+        Больше функционала или ниже цена и быстрее сроки разработки?
+        Мы обсудим с Вами и подберем наилучшее решение для вашего проекта.
+        Протестируем вместе с Вами результаты работы, поможем с публикацией в Apple Store и Google Play.
+      </p>
+      <p class="description" [class.open-description]="whatDevIndex === 'web'">
+        Выбирайте верстку сайта или создание полноценного Web приложения с использованием лучших вреймворков Web разработки.
+        Мы адаптируем под любые разрешения экранов, под любые современные браузеры.
+        Проверим работу на любых мобильных экранах или компьютерах под управлением Windows, MacOS и Linux.
+        Справимся с техническими задачами любой сложности, поможем с установкой на хостинг или настроим собственный сервер - выбирая нас, Вы выбираете качество.
+      </p>
+      <p class="description" [class.open-description]="whatDevIndex === 'design'">
+        Поможем воплотить самые глубинные Ваши фантазии, реализовав их в готовом макете, изображениях в высоком разрешении или возьмемся за реализация в виде верстки.
+        Готовим логотипы, рекламные изображения и многое другое.
+        У Вас нет своих идей? Мы придумаем вместе с Вами!
+      </p>
+      <p class="description" [class.open-description]="whatDevIndex === 'complex'">
+        У Вас сложный проект, требующий полноценной команты разработки?
+        Обратитесь к нам - всегда оставаясь на связи мы составим с Вами техническое задание, отрисуем дизайн,
+        настроим и реализуем серверную часть пока в разработке будут находится Ваши будущие сайт и мобильное приложение.
+        Также поможем с созданием панели администрирования, публикацией Ваших продуктов и техничекой консультацией по любым вопросам.
+        Напишите нам, чтобы узнать больше, что мы можем Вам предложить.
       </p>
     </div>
   </div>

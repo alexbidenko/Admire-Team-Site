@@ -1,0 +1,18 @@
+<div class="staff-container" [class.revers]="revers">
+  <div class="content-container">
+    <div class="position-relative h-100 w-100">
+      <h3 class="staff-name">{{staff.name}}</h3>
+      <h4 class="staff-position">{{staff.profile}}</h4>
+      <p class="staff-description">
+        {{staff.description}}
+      </p>
+    </div>
+  </div>
+  <div class="avatar-circle"></div>
+  <div class="avatar-container">
+    <div class="position-relative w-100 h-100">
+      <img [src]="'/assets/staff/' + getCategoryIcon() + '.svg'" class="class-icon">
+      <div class="avatar" [style.backgroundImage]="'url(/assets/staff/' + staff.avatar + ')'"></div>
+    </div>
+  </div>
+</div>

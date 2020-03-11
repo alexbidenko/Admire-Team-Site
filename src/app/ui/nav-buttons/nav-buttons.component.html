@@ -1,0 +1,49 @@
+<nav class="left-fixed-nav" [class.is-hidden]="isMain">
+  <a routerLink="/" mat-button class="button-about">
+    <img src="/assets/nav/bottom_nav_about.png" alt="About">
+  </a>
+  <br/>
+  <a routerLink="/what-dev" mat-button>
+    <img src="/assets/nav/bottom_nav_profile.svg" alt="Profile">
+  </a>
+  <br/>
+  <a routerLink="/portfolio" mat-button>
+    <img src="/assets/nav/bottom_nav_portfolio.svg" alt="Portfolio">
+  </a>
+  <br/>
+  <a routerLink="/staff" mat-button>
+    <img src="/assets/nav/bottom_nav_staff.svg" alt="Staff">
+  </a>
+  <br/>
+  <a routerLink="/about" mat-button>
+    <img src="/assets/nav/bottom_nav_blog.svg" alt="Blog">
+  </a>
+</nav>
+
+<nav class="bottom-nav-container" [class.is-hidden]="!isMain">
+  <div class="button-container">
+    <a routerLink="/what-dev" mat-button>
+      <img src="/assets/nav/bottom_nav_profile.svg" alt="Profile">
+    </a>
+  </div>
+  <div class="button-container">
+    <a routerLink="/portfolio" mat-button>
+      <img src="/assets/nav/bottom_nav_portfolio.svg" alt="Portfolio">
+    </a>
+  </div>
+  <div class="button-container">
+    <a href="https://admire.social/events" target="_blank" mat-button class="button-about">
+      <img src="/assets/nav/bottom_nav_about.png" alt="About">
+    </a>
+  </div>
+  <div class="button-container">
+    <a routerLink="/staff" mat-button>
+      <img src="/assets/nav/bottom_nav_staff.svg" alt="Staff">
+    </a>
+  </div>
+  <div class="button-container">
+    <a routerLink="/about" mat-button>
+      <img src="/assets/nav/bottom_nav_blog.svg" alt="Blog">
+    </a>
+  </div>
+</nav>

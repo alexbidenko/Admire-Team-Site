@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WhatDevComponent implements OnInit {
 
+  whatDevIndex = 'web';
+
   constructor() { }
 
   ngOnInit() {

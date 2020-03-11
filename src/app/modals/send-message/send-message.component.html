@@ -1,0 +1,33 @@
+<div class="mail-container container">
+  <h4 class="site-title">Admire</h4>
+
+  <div class="container">
+    <h3 class="dialog-title">Создаем проект</h3>
+
+    <form [formGroup]="mailService.mailGroup">
+      <mat-form-field class="w-100">
+        <input matInput formControlName="name" placeholder="Как к Вам обратиться">
+      </mat-form-field>
+      <mat-form-field class="w-100">
+        <input matInput formControlName="contact" placeholder="Как с Вами связаться">
+      </mat-form-field>
+      <mat-form-field class="w-100">
+        <input matInput formControlName="balance" placeholder="На какой примерно бюджет расчитываете">
+      </mat-form-field>
+      <mat-form-field class="w-100">
+        <textarea matInput matTextareaAutosize placeholder="Опишите Ваш проект" [cdkAutosizeMinRows]="3" formControlName="description"></textarea>
+      </mat-form-field>
+
+      <mat-chip-list>
+        <button mat-button class="file-upload-button ml-1" (click)="fileInput.click()">Прикрепить файл</button>
+        <mat-chip *ngFor="let file of mailService.files" removable (removed)="removeFile(file)">
+          {{ file.name }}
+          <mat-icon matChipRemove>cancel</mat-icon>
+        </mat-chip>
+      </mat-chip-list>
+      <input class="d-none" #fileInput type="file" (change)="prepareFiles($event)" multiple>
+
+      <button mat-button class="send-button" (click)="mailService.sendOrderMessage()">Отправить</button>
+    </form>
+  </div>
+</div>

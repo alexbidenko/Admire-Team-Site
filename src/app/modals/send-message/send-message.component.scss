@@ -1,0 +1,63 @@
+.mail-container {
+  border: 2px solid white;
+  background: radial-gradient(at bottom, #612A56, #250D59);
+  position: relative;
+}
+
+.site-title {
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  letter-spacing: 0.34em;
+  color: #FFFFFF;
+  position: absolute;
+  top: 14px;
+  left: 24px;
+}
+
+.dialog-title {
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+
+textarea {
+  overflow: hidden;
+}
+
+::ng-deep .mat-form-field-label, ::ng-deep .mat-form-field .mat-form-field-label, input, textarea {
+  color: white!important;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+::ng-deep .mat-form-field-underline, ::ng-deep .mat-form-field-ripple {
+  background-color: white!important;
+}
+
+.file-upload-button {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  border: 1px solid white;
+  border-radius: 4px;
+  color: white;
+}
+
+.send-button {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  display: block;
+  border: 1px solid white;
+  border-radius: 16px;
+  color: white;
+  margin: 12px auto 24px;
+}
